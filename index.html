@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items Total Price Calculation</title>
+</head>
+<body>
+    <!-- 1 -->
+    <!-- <h1>Items Total Price Calculation</h1>
+    <ul id="items-list"></ul>
+    <p id="total-price"></p> -->
+
+
+    <!-- 4 -->
+    <!-- <h1>Enter Population Records</h1>
+    <form id="populationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female" required> Female<br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" required>
+            <option value="High School">High School</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+
+        <label for="profession">Profession:</label>
+        <select id="profession" required>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Artist">Artist</option>
+        </select><br><br>
+
+        <button type="submit">Save Record</button>
+    </form>
+
+    <h2>Saved Records</h2>
+    <ul id="recordsList"></ul> -->
+
+
+    <script>
+        // 1
+        // var itemsArray = [
+            // {name: "juice", price: 50, quality: 3},
+            // {name: "cookie", price: 30, quality: 9},
+            // {name: "shirt", price: 880, quality: 1},
+            // {name: "pen", price: 100, quality: 2}
+        // ];
+
+        // Calculate total price for each item and display it
+        // itemsArray.forEach(item => {
+            // item.totalPrice = item.price * item.quality;
+            // let listItem = document.createElement('li');
+            // listItem.textContent = `Total price for ${item.name}: ${item.totalPrice}`;
+            // document.getElementById('items-list').appendChild(listItem);
+        // });
+
+        // Calculate total price for all items and display it
+        // let totalPriceAllItems = itemsArray.reduce((acc, item) => acc + item.totalPrice, 0);
+        // document.getElementById('total-price').textContent = `Total price for all items: ${totalPriceAllItems}`;
+
+        // 2
+        // Create an object with the specified properties
+        // let person = {
+        //     name: "John Doe",
+        //     email: "john.doe@example.com",
+        //     password: "securepassword123",
+        //     age: 30,
+        //     gender: "Male",
+        //     city: "New York",
+        //     country: "USA"
+        // };
+
+        // Check if 'age' and 'country' properties exist
+        // let hasAge = person.hasOwnProperty('age');
+        // let hasCountry = person.hasOwnProperty('country');
+
+        // Check if 'firstName' and 'lastName' properties exist
+        // let hasFirstName = person.hasOwnProperty('firstName');
+        // let hasLastName = person.hasOwnProperty('lastName');
+
+        // Output the results
+        // console.log("Has age property:", hasAge); // true
+        // console.log("Has country property:", hasCountry); // true
+        // console.log("Has firstName property:", hasFirstName); // false
+        // console.log("Has lastName property:", hasLastName); // false
+
+
+        // 3
+        // Define the constructor function
+        // function Person(name, email, password, age, gender, city, country) {
+        //     this.name = name;
+        //     this.email = email;
+        //     this.password = password;
+        //     this.age = age;
+        //     this.gender = gender;
+        //     this.city = city;
+        //     this.country = country;
+        // }
+
+        // Create multiple records using the constructor function
+        // let person1 = new Person("Alice Smith", "alice@example.com", "password123", 28, "Female", "Los Angeles", "USA");
+        // let person2 = new Person("Bob Johnson", "bob@example.com", "password456", 35, "Male", "New York", "USA");
+        // let person3 = new Person("Charlie Brown", "charlie@example.com", "password789", 22, "Male", "Chicago", "USA");
+
+        // Output the records
+        // console.log(person1);
+        // console.log(person2);
+        // console.log(person3);
+
+
+        // 4
+        // Constructor function for population records
+        // function PopulationRecord(name, gender, address, education, profession) {
+        //     this.name = name;
+        //     this.gender = gender;
+        //     this.address = address;
+        //     this.education = education;
+        //     this.profession = profession;
+        // }
+
+        // Function to save record to localStorage
+        // function saveRecord(record) {
+        //     let records = JSON.parse(localStorage.getItem('populationRecords')) || [];
+        //     records.push(record);
+        //     localStorage.setItem('populationRecords', JSON.stringify(records));
+        // }
+
+        // Function to display saved records
+        // function displayRecords() {
+        // let records = JSON.parse(localStorage.getItem('populationRecords')) || [];
+        // const recordsList = document.getElementById('recordsList');
+        // recordsList.innerHTML = '';
+        // records.forEach(record => {
+        //     let listItem = document.createElement('li');
+        //     listItem.textContent = `${record.name}, ${record.gender}, ${record.address}, ${record.education}, ${record.profession}`;
+        //     recordsList.appendChild(listItem);
+        // });
+        // }
+
+        // Event listener for form submission
+        // document.getElementById('populationForm').addEventListener('submit', function(event) {
+        //     event.preventDefault();
+        //     const name = document.getElementById('name').value;
+        //     const gender = document.querySelector('input[name="gender"]:checked').value;
+        //     const address = document.getElementById('address').value;
+        //     const education = document.getElementById('education').value;
+        //     const profession = document.getElementById('profession').value;
+
+        //     const newRecord = new PopulationRecord(name, gender, address, education, profession);
+        //     saveRecord(newRecord);
+        //     displayRecords();
+
+        // Clear form fields
+        //document.getElementById('populationForm').reset();
+        // });
+
+        // Display records on page load
+        // window.onload = displayRecords;
+
+
+
+    </script>
+</body>
+</html>
